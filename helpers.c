@@ -1,5 +1,4 @@
 #include "helpers.h"
-#include <stdbool.h>
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width]) {
@@ -17,7 +16,6 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width]) {
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width]) {
     BYTE box[8][3];
-    bool flag = true;
 
     for(int i = 0; i < height; i++) {
         for(int j = 0; j < width; j++) {
@@ -62,7 +60,17 @@ void blur(int height, int width, RGBTRIPLE image[height][width]) {
     }
 }
 
-//Applies sepia effect
+// Applies sepia effect
 void sepia(int height, int width, RGBTRIPLE image[height][width]) {
+    for(int i = 0; i < height; i++) {
+        for(int j = 0; j < width; j++) {
+            float sepiaRed = .393 * (float) image[i][j].rgbtRed + .769 * (float) image[i][j].rgbtGreen + .189 * (float) image[i][j].rgbtBlue;
+            float sepiaGreen = .349 * (float) image[i][j].rgbtRed + .686 * (float) image[i][j].rgbtGreen + .168 * (float) image[i][j].rgbtBlue;
+            float sepiaBlue = .272 * (float) image[i][j].rgbtRed + .534 * (float) image[i][j].rgbtGreen + .131 * (float) image[i][j].rgbtBlue;
 
+            image[i][j].rgbtRed = sepiaRed > 255 ? 255 : sepiaRed;
+            image[i][j].rgbtGreen = sepiaGreen > 255 ? 255 : sepiaGreen;
+            image[i][j].rgbtBlue = sepiaBlue > 255 ? 255 : sepiaBlue;
+        }
+    }
 }

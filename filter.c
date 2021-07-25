@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
 
     // Define allowable s
-    char *filters = "begr";
+    char *filters = "bgs";
 
     // Get filter flag and check validity
     char filter = getopt(argc, argv, filters);
@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
 
         // Sepia
         case 's':
-            grayscale(height, width, image);
+            sepia(height, width, image);
             break;
     }
 

@@ -1,2 +1,2 @@
 filter:
-	clang -o filter helpers.c filter.c 
+	clang -lm -o filter helpers.c filter.c 
