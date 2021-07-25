@@ -1,6 +1,6 @@
 # CS50: Image Filtering
 
-## Project done in CS50 - Introduction to Computer Science course.
+## Project done in Harvard CS50 - Introduction to Computer Science course.
 
 It's a simple C application for modiying the RGB bits in a BMP image and applying some effects like Sepia, Grayscale and Blur.
 
