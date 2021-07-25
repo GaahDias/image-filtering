@@ -8,8 +8,8 @@ It's a simple C application for modiying the RGB bits in a BMP image and applyin
 
 <table>
     <tr>
-        <td><img width="450px" align="left" src="images/tower.bmp" /></td>
-        <td><img width="435px" align="left" src="images/sepia-tower.bmp" /></td>
+        <td><img width="440px" align="left" src="images/tower.bmp" /></td>
+        <td><img width="440px" align="left" src="images/sepia-tower.bmp" /></td>
     </tr>
 </table>
 
@@ -17,8 +17,8 @@ It's a simple C application for modiying the RGB bits in a BMP image and applyin
 
 <table>
     <tr>
-        <td><img width="450px" align="left" src="images/yard.bmp" /></td>
-        <td><img width="450px" align="left" src="images/gray-yard.bmp" /></td>
+        <td><img width="440px" align="left" src="images/yard.bmp" /></td>
+        <td><img width="440px" align="left" src="images/gray-yard.bmp" /></td>
     </tr>
 </table>
 
@@ -26,8 +26,8 @@ It's a simple C application for modiying the RGB bits in a BMP image and applyin
 
 <table>
     <tr>
-        <td><img width="450px" align="left" src="images/courtyard.bmp" /></td>
-        <td><img width="450px" align="left" src="images/blur-courtyard.bmp" /></td>
+        <td><img width="440px" align="left" src="images/courtyard.bmp" /></td>
+        <td><img width="440px" align="left" src="images/blur-courtyard.bmp" /></td>
     </tr>
 </table>
 
